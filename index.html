@@ -12,163 +12,195 @@
     <link rel="icon" href="" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div>
+    <header>
+        <div class="header__inner container">
+            <div class="portrait__icon">
                 <img class="portrait" src="" />
                 <p>Cody Seiler</p>
             </div>
-    
-            <nav aria-label="primary-navigation">
-                <ul>
-                    <li><a href="" aria-label="link to about">About</a></li>
-                    <li><a href="" aria-label="link to projects">Projects</a></li>
-                    <li><a href="" aria-label="link to contact">Contact</a></li>
-                    <li><a href="" aria-label="link to resume">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main>
-            <section class="hero">
-                <h2>HELLO, MY NAME IS <span class="accent">CODY</span></h2>
+            
+            <nav id="nav" class="nav" role="navigation">
+                <button id="navToggleBtn" class="nav__toggle--button" aria-expanded="false" aria-controls="nav-menu" aria-label="toggle navigation menu">
+                    <span class="hamburger">
+                        <span class="hamburger__bar"></span>
+                        <span class="hamburger__bar"></span>
+                        <span class="hamburger__bar"></span>
+                    </span>
+                </button>
 
-                <div>
-                    <h2>I AM A</h2>
-                    <h1>FRONTEND DEVELOPER</h1>
+                <div id="navContent" class="nav__content">
+                    <ul id="navMenu" class="nav__menu" role="list">
+                        <li><a class="nav__link" href="#about" aria-label="link to about">About</a></li>
+                        <li><a class="nav__link" href="#projects" aria-label="link to projects">Projects</a></li>
+                        <li><a class="nav__link" href="#contact" aria-label="link to contact">Contact</a></li>
+                        <li><a class="nav__link" href="" aria-label="link to resume">Resume</a></li>
+                    </ul>
                 </div>
-
-                <p>
-                    I'm a front-end developer that builds accessible, efficient, and clean websites. I have 2 years of experience in various frontend technologies
-                    with an avidity to learn more. 
-                </p>
-            </section>
-
-            <section class="about">
-                <h2>About Me</h2>
-
-                <p> 
-                    Hi there! My name is <span class="accent">Cody Seiler</span>, and I'm a web developer with 2 years of experience learning 
-                    and working with various technologies. I'm particularly skilled in JavaScript, React, Node.js, 
-                    MongoDB, and Redux. I'm passionate about creating web apps that are functional, user-friendly, 
-                    and visually appealing.
-                </p>
-                <p>
-                    Currently, I'm seeking an opportunity to work in a dynamic and challenging environment where 
-                    I can continue to grow and expand my skills. I believe in constantly learning and staying 
-                    up-to-date with the latest web development trends and technologies.
-                </p>
-                <p>
-                    When I'm not coding, you can find me playing video games, skateboarding, or taking my motorcycle 
-                    for a ride. I'm a firm believer in work-life balance, and I believe that pursuing my hobbies and 
-                    interests helps me stay focused and energized when it comes to my work.
-                </p>
-                <p>
-                    Thank you for taking the time to read my "About Me" section. I hope that we have the opportunity 
-                    to work together soon!
-                </p>
-            </section>
-    
-            <section class="projects">
-                <h2>Projects</h2>
                 
-                <div class="projects__container">
-                    <div class="project">
-                        <div class="project__image">
+                <div id="navMenuBg" class="nav__menu--bg"></div>
+            </nav>
+
+            
+            
+        </div>
+    </header>
+
+    <main class="container" tabindex="-1">
+        <section class="hero">
+            <h2>HELLO, MY NAME IS <span class="accent">CODY</span></h2>
+
+            <div>
+                <h2>I AM A</h2>
+                <h1>FRONTEND DEVELOPER</h1>
+            </div>
+
+            <p>
+                I'm a front-end developer that builds accessible, efficient, and clean websites. I have 2 years of experience in various frontend technologies
+                with an avidity to learn more. 
+            </p>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+
+            <p> 
+                Hi there! My name is <span class="accent">Cody Seiler</span>, and I'm a web developer with 2 years of experience learning 
+                and working with various technologies. I'm particularly skilled in JavaScript, React, Node.js, 
+                MongoDB, and Redux. I'm passionate about creating web apps that are functional, user-friendly, 
+                and visually appealing.
+            </p>
+            <p>
+                Currently, I'm seeking an opportunity to work in a dynamic and challenging environment where 
+                I can continue to grow and expand my skills. I believe in constantly learning and staying 
+                up-to-date with the latest web development trends and technologies.
+            </p>
+            <p>
+                When I'm not coding, you can find me playing video games, skateboarding, or taking my motorcycle 
+                for a ride. I'm a firm believer in work-life balance, and I believe that pursuing my hobbies and 
+                interests helps me stay focused and energized when it comes to my work.
+            </p>
+            <p>
+                Thank you for taking the time to read my "About Me" section. I hope that we have the opportunity 
+                to work together soon!
+            </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            
+            <div class="projects__container">
+                <div class="project">
+                    <div class="project__image">
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                    </div>
+    
+                    <div class="project__info">
+                        <h3>Project Title</h3>
+    
+                        <div class="project__stack">
+                            <img src="" alt=""/>
                             <img src="" alt=""/>
                             <img src="" alt=""/>
                             <img src="" alt=""/>
                         </div>
-        
-                        <div class="project__info">
-                            <h3>Project Title</h3>
-        
-                            <div class="project__stack">
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                            </div>
-        
-                            <p>Currently, I'm seeking an opportunity to work in a dynamic and challenging environment where 
-                                I can continue to grow and expand my skills. I believe in constantly learning and staying 
-                                up-to-date with the latest web development trends and technologies.</p>
-        
-                            <div class="project__links">
-                                <a href="" aria-label="link to project">Live Preview</a>
-                                <a href="" aria-label="link to project on github">View on Github</a>
-                            </div>
-                        </div> <!-- closes project info -->
-                    </div> <!-- closes project-->
-        
-                    <div class="project">
-                        <div class="project__image">
-                            <p>-</p>
-                            <p>+</p>
+    
+                        <p>Currently, I'm seeking an opportunity to work in a dynamic and challenging environment where 
+                            I can continue to grow and expand my skills. I believe in constantly learning and staying 
+                            up-to-date with the latest web development trends and technologies.</p>
+    
+                        <div class="project__links">
+                            <a href="" aria-label="link to project">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+
+                            <a href="" aria-label="link to project on github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+                            </a>
+                        </div>
+                    </div> <!-- closes project info -->
+                </div> <!-- closes project-->
+    
+                <div class="project">
+                    <div class="project__image">
+                        <p>-</p>
+                        <p>+</p>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                    </div>
+    
+                    <div class="project__info">
+                        <h3>Project Title</h3>
+    
+                        <div class="project__stack">
+                            <img src="" alt=""/>
                             <img src="" alt=""/>
                             <img src="" alt=""/>
                             <img src="" alt=""/>
                         </div>
-        
-                        <div class="project__info">
-                            <h3>Project Title</h3>
-        
-                            <div class="project__stack">
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                            </div>
-        
-                            <p></p>
-        
-                            <div class="project__links">
-                                <a href="" aria-label="link to project">Live Preview</a>
-                                <a href="" aria-label="link to project on github">View on Github</a>
-                            </div>
-                        </div> <!-- closes project info -->
-                    </div> <!-- closes project-->
-                    <div class="project">
-                        <div class="project__image">
+    
+                        <p></p>
+    
+                        <div class="project__links">
+                            <a href="" aria-label="link to project">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+
+                            <a href="" aria-label="link to project on github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+                            </a>
+                        </div>
+                    </div> <!-- closes project info -->
+                </div> <!-- closes project-->
+                <div class="project">
+                    <div class="project__image">
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                    </div>
+    
+                    <div class="project__info">
+                        <h3>Project Title</h3>
+    
+                        <div class="project__stack">
+                            <img src="" alt=""/>
                             <img src="" alt=""/>
                             <img src="" alt=""/>
                             <img src="" alt=""/>
                         </div>
-        
-                        <div class="project__info">
-                            <h3>Project Title</h3>
-        
-                            <div class="project__stack">
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                                <img src="" alt=""/>
-                            </div>
-        
-                            <p></p>
-        
-                            <div class="project__links">
-                                <a href="" aria-label="link to project">Live Preview</a>
-                                <a href="" aria-label="link to project on github">View on Github</a>
-                            </div>
-                        </div> <!-- closes project info -->
-                    </div> <!-- closes project-->
-                </div>
-            </section>
     
-            <section class="contact">
-                <h3>Let's Talk</h3>
+                        <p></p>
     
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in.
-                </p>
-    
-                <a class="contact__link" href="mailto:email@example.com">Say Hello</a>
-            </section>
-        </main>
-    
-        <footer>
+                        <div class="project__links">
+                            <a href="" aria-label="link to project">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+
+                            <a href="" aria-label="link to project on github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+                            </a>
+                        </div>
+                    </div> <!-- closes project info -->
+                </div> <!-- closes project-->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Let's Talk</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat. Duis aute irure dolor in.
+            </p>
+
+            <a class="contact__link" href="mailto:email@example.com">Say Hello</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__inner container">
             <div>
                 <h4>Contact</h4>
                 <p>Cody Seiler</p>
@@ -203,7 +235,8 @@
             </div>
     
             <span class="copyright">© 2023 Cody Seiler. All rights reserved.</span>
-        </footer>
-    </div>
+        </div>
+    </footer>
+    <script type="module" src="index.js" defer></script>
 </body>
 </html>
