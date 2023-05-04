@@ -413,6 +413,7 @@ header img {
   display: flex;
   flex-direction: column;
   max-width: 22rem;
+  margin-inline: auto;
   background-color: hsl(245, 16%, 16%);
 }
 
